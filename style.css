@@ -1,0 +1,373 @@
+:root {
+    /* Colors */
+    --background-color: #ECECE9;
+    --primary-color: #2A3B49;
+    --secondary-color: #7BFFE9;
+    --text-primary-color: #FFFFFF;
+    --text-secondary-color: #000000;
+    
+  
+    /* Font */
+    --primary-font-family: 'Montserrat', sans-serif;
+    
+
+    /* Font-Sizes */
+    --thirtysix-pixel-font-size: 2.25rem;
+    --thirty-pixel-font-size: 1.875rem;
+    --twentyfour-pixel-font-size: 1.5rem;
+    --twenty-pixel-font-size: 1.25rem;
+    --sixteen-pixel-font-size: 1rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+   }
+   
+   p, a {
+     font-family: 'Montserrat', sans-serif;
+   }
+
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--background-color);
+  }
+
+
+
+  /* Button Styling Begins */
+  .btn {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: translate 180ms, opacity 180ms;
+    opacity: 0.8;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .btn:active {
+    translate: 1px 1px;
+  }
+
+  .btn--nav {
+    color: white;
+    padding: 12px;
+  }
+
+  .btn--raised {
+    background-color: var(--secondary-color);
+    color: var(--black);
+    padding: 12px 53px 12px 24px;
+    /* Please make sure to download this file into your project. The CDN link may change at any time in the future */
+    background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478882/learnhtmlcss/portfolio/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+  }
+
+  .btn--line {
+    color: var(--text-color);
+    padding: 12px;
+  }
+
+  .btn--line::after {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid var(--secondary-color);
+    height: 4px;
+    width: 100%;
+}
+  /* Button Styling Ends */
+
+
+  /* --- Header Starts --- */
+  .header-container {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0rem 0rem;
+  }
+
+  .header-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header-container a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h1 {
+    color: var(--secondary-color);
+    font-size: var(--thirtysix-pixel-font-size);
+    font-weight: 400;
+  }
+
+  
+  #menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .menuToggle {
+    visibility: hidden;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: var(--sixteen-pixel-font-size);
+    font-weight: 400;
+    color: var(--text-primary-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* --- Header Ends --- */ 
+
+
+
+  /* --- Main Starts --- */
+  
+  /* Landing Page Begins */
+  
+  .landing-main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  
+  .card-container img {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  /* Landing Page Ends */
+  
+
+
+  /* About Us Page Begins */
+    .about-img {
+     width: 100%;
+     height: 400px;
+    }
+    
+    .about-main-container {
+      padding: 0rem 3rem;
+      text-align: center;
+    }
+
+    .about-main-container h2 {
+        text-align: center;
+    }
+
+    .about-bottom-txt-container {
+      margin-bottom: 3rem;
+    }
+    
+    .about-img {
+      margin-bottom: 1rem;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  /* About Us Page Ends */
+
+
+  /* Contact Us Page Begins */
+  a {
+    color: var(--anchor-color);
+    opacity: 0.85;
+    transition: opacity 200ms;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  p {
+    color: var(--gray-light);
+  }
+
+  strong {
+    font-weight: inherit;
+  }
+
+  figure,
+  blockquote {
+    margin: 0;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .contact-form {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    padding: 0rem 3rem;
+  }
+
+  .contact-container h2 {
+    text-align: center;
+  }
+
+  .contact-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .contact-line {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .contact-line p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .sr-only,
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #999999;
+    padding: 12px 10px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    color: white;
+    margin-bottom: 24px;
+    transition: border-color 200ms;
+  }
+
+  .input:focus {
+    border-bottom-color: var(--secondary-color);
+    outline: none;
+  }
+
+  textarea.input {
+    resize: vertical;
+    min-height: 100px;
+  }
+  /* Contact Us Page Ends */
+
+  /* --- Main Ends --- */
+
+
+  /* --- Tablet Media Queries Begin --- */
+  @media only screen and (min-width: 768px) {
+
+    /* Header Tablet Begins */ 
+    #menu-icon {
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+    /* Header Tablet Ends */
+
+
+    /* Landing Page Tablet Media Queries Begins */
+
+    /* Landing Page Tablet Media Queries Ends */
+
+
+    /* About Us Page Tablet Media Queries Begins */
+    .about-main-container {
+      padding: 0rem 8rem;
+    }
+
+    /* About US Page Tablet Media Queries Ends */
+
+    
+    /* Contact Us Page Tablet Media Queries Begins */
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 5rem;
+    }
+
+    /* Contact US Page Tablet Media Queries Ends */
+
+
+  }
+  /* --- Tablet Media Queries Ends --- */
+
+
+
+  /* --- Desktop Media Queries Begins --- */
+  @media only screen and (min-width: 992px) {
+
+    /* Landing Page Desktop Media Queries Begins */
+   
+    /* Landing Page Desktop Media Queries Ends */
+
+
+    /* About Us Page Desktop Media Queries Begins */
+
+
+    /* About US Page Desktop Media Queries Ends */
+
+
+
+    /* Contact Us Page Desktop Media Queries Begins */
+
+
+    /* Contact Us Page Desktop Media Queries Ends */
+  }
+  /* --- Desktop Media Queries Ends --- */

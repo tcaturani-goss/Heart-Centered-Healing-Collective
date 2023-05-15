@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pixify</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="./healing_collective_logo.png"
+          alt="healing collective logo image"
+        />
+        <nav class="nav-menu" id="menuToggle">
+          <a href="./index.html">Home</a>
+          <a href="./about-us.html">About Us</a>
+          <a href="./contact.html">Contact Us</a>
+        </nav>
+        <p id="menu-icon">&#x2630;</p>
+      </div>
+    </header>
+    <main>
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+          <address>
+            <div class="contact-line">
+              <svg
+                width="30"
+                height="30"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                />
+              </svg>
+              <div>
+                <p class="text">Current location</p>
+                <p class="text--bold">Littleton, Colorado</p>
+              </div>
+            </div>
+            <div class="contact-line">
+              <svg
+                width="30"
+                height="30"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                />
+              </svg>
+              <div>
+                <p class="text">Email</p>
+                <a class="text--bold" href="mailto:email@example.com">
+                  email@example.com
+                </a>
+              </div>
+            </div>
+          </address>
+          <form>
+            <label for="hire-name" class="sr-only">Your name</label>
+            <input
+              id="hire-name"
+              type="text"
+              autocomplete="name"
+              class="input"
+              placeholder="Your name"
+            />
+            <label for="hire-email" class="sr-only">Your email</label>
+            <input
+              id="hire-email"
+              type="email"
+              autocomplete="email"
+              class="input"
+              placeholder="Your email"
+            />
+            <label for="hire-message" class="sr-only">Your message</label>
+            <textarea
+              id="hire-message"
+              class="input"
+              placeholder="Your message"
+            ></textarea>
+            <div class="contact-action">
+              <input type="submit" class="btn btn--raised" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
